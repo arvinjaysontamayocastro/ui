@@ -13,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 export class LoginComponent {
   invalidLogin?: boolean;
 
-  url = configurl.apiServer.url + '/api/authentication/';
+  url = configurl.apiServer.url + '/api/authmanagement/';
 
   constructor(
     private router: Router,
