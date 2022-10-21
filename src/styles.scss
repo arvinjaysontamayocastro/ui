@@ -106,3 +106,17 @@
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .box {
+      display: block !important;
+      .c-2 {
+        padding: 24px !important;
+        .g-bold {
+            padding-top: 24px;
+        }
+      }
+      .c-3 {
+        width: 100% !important;
+      }
+    }
+  }
