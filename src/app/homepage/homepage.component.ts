@@ -8,7 +8,14 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   //   styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent {
-  constructor(private jwtHelper: JwtHelperService, private router: Router) {}
+  fullUrl: string = "";
+  websiteUrl: string = "";
+  pageUrl: string = "";
+  constructor(private jwtHelper: JwtHelperService, private router: Router) {
+    this.fullUrl = window.location.toString();
+    this.websiteUrl = window.location.origin.toString();
+    this.pageUrl = this.fullUrl.replace(this.websiteUrl, "");
+  }
 
   isUserAuthenticated() {
     const token = localStorage.getItem('jwt');
