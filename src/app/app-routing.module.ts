@@ -5,11 +5,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { AOComponent } from './ao/ao.component';
 import { ProductsComponent } from './products/products.component';
+import { GistLensComponent } from './homework/gistlens/gistlens.component';
 
 //all components routes
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'ao', component: AOComponent },
+  { path: 'homework/gistlens', component: GistLensComponent },
   { path: 'product', component: ProductsComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
 ];

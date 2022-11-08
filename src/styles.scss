@@ -83,6 +83,17 @@
                     margin-right: 12px;
                 }
             }
+            .g-company-logo {
+                max-width: 300px;
+            }
+            .g-output { 
+                padding: 12px;
+                word-break: break-word;
+                margin-top: 12px;
+                border: solid 1px #ced4da;
+                border-radius: 4px;
+                background-color: #ced4da;
+            }
         }
         .c-3 {
             width: 300px;

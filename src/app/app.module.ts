@@ -16,13 +16,15 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormAddComponent } from './form-add/form-add.component';
 import { PageDisplayComponent } from './page/page-display.component';
 import { AOComponent } from './ao/ao.component';
+import { GistLensComponent } from './homework/gistlens/gistlens.component';
 
 //all components routes
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'ao', component: AOComponent },
+  // { path: 'homework/gistlens', component: GistLensComponent },
   { path: 'product', component: ProductsComponent, canActivate: [AuthGuard] },
-  { path: 'login', component: LoginComponent },
+  { path: 'homework/gistlens', component: LoginComponent },
   { path: '**', component: HomepageComponent },
 ];
 
