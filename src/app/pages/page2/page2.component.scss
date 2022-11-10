@@ -1,0 +1,37 @@
+.page2 {
+    background-color: #091320;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    float: left;
+    padding-top: 8vh;
+    .calling-card {
+        width: 1098px;
+        height: 648px;
+        zoom: .5;
+        background-color: #FFFFFF;
+        margin: 12vh auto;
+        background-size:cover;
+        &.calling-card-1 {
+            background-image: url('../../../assets/images/calling-cards/hm/1.png');
+        }
+        &.calling-card-2 {
+            background-image: url('../../../assets/images/calling-cards/hm/2.png');
+        }
+    }
+    .back {
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 48px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .page2{
+    .calling-card {
+        zoom: .3;
+    }
+}
+}

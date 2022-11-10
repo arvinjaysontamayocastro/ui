@@ -1,12 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-.page {
+.page1 {
     min-height: 100vh;
-    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-image: linear-gradient(to right, #111111, #091320);
     display: block;
     position: relative;
     width: 100%;
     clear: both;
     float: left;
+    color:#ffffff;
+    font-family: Arial;
+    .back {
+        a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 48px;
+        }
+    }
     h1 {
         text-align: center;
         position: absolute;
@@ -15,7 +24,7 @@
         z-index: 100;
         font-size: 5em;
         margin-top: 25px;
-        color: rgba(09,13,20,1);
+        color: #ffffff;
     }
     .box {
         // background-color: #f8f8f8;
@@ -23,15 +32,15 @@
         position: relative;
         min-height: 80vh;
         margin: 100px auto;
-        max-width: 1000px;
+        max-width: 1300px;
         border-radius: 5px;
         .c-1 {
             width: 55px;
-            background-color: rgba(09,13,20,1);
+            // background-color: rgba(09,13,20,1);
         }
         .c-2 {
             flex: 1;
-            background-color: #ffffff;
+            // background-color: #ffffff;
             .g-floating-download {
                 .download-button {
                     background-color: green;
@@ -45,6 +54,8 @@
             .g-1 {
                 margin: 24px;
                 .fa {
+                }
+                .fa-pre {
                     display: block;
                     position: absolute;
                     color: #FFFFFF;
@@ -54,9 +65,23 @@
                     margin-top: 5px;
                     font-size: 1.2em;
                 }
+                .fa-pres {
+                    display: block;
+                    position: absolute;
+                    color: #FFFFFF;
+                    margin-left: -39px;
+                    width: 55px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-size: 1em;
+                }
+            }
+            .g-spacer {
+                height: 111px;
             }
             .g-highlight {
-                font-size: 2em;
+                font-size: 3em;
+                font-weight: bolder;
             }
             .g-bold {
                 font-weight: bolder;
@@ -76,6 +101,49 @@
                     }
                 }
             }
+            .g-menu-samples {
+                display: flex;
+                column-gap: 48px;
+                row-gap: 222px;
+                max-width: 800px;
+                flex-wrap: wrap;
+                .g-menu-sample {
+                    width: 300px;
+                    height: 300px;
+                    background-size: cover;
+                    border-radius: 90px 130px 200px 0;
+                    .g-menu-title {
+font-weight: bolder;
+                    }
+                    .g-menu-item {
+                        display: flex;
+                        margin-top: 12px;
+                        padding-top: 12px;
+                        border-top: dotted 1px #ffffff;
+                        .g-menu-name {
+flex: 1;
+                        }
+                        .g-menu-price {
+                            
+                        }
+                    }
+                }
+            }
+            .g-food-1 {
+                background-image: url('../../../assets/images/menu/m/tuna.jpg');
+            }
+            .g-food-2 {
+                background-image: url('../../../assets/images/menu/m/salad.jpg');
+            }
+            .g-food-3 {
+                background-image: url('../../../assets/images/menu/m/oats.jpg');
+            }
+            .g-food-4 {
+                background-image: url('../../../assets/images/menu/m/pancake.jpg');
+            }
+            .g-food-5 {
+                background-image: url('../../../assets/images/menu/m/drink.jpg');
+            }
             .g-badges {
                 .badge {
                     display: inline-block;
@@ -94,10 +162,27 @@
                 border-radius: 4px;
                 background-color: #ced4da;
             }
+            .top-menu {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    column-gap: 48px;
+                    li{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                    }
+                }
+            }
+            .fa-logo {
+                font-weight: bolder;
+                font-family: "Arial";
+            }
         }
         .c-3 {
             width: 300px;
-            background-color: #ffbb33;
+            // background-color: #ffbb33;
             padding: 40px;
             .g-header {
                 font-weight: bolder;
@@ -146,6 +231,10 @@
             }
         }
     }
+    .link{
+        color: #ffffff;
+        text-decoration: none;
+    }
 }
 @media screen and (max-width: 500px) {
     .box {
@@ -163,36 +252,4 @@
         }
       }
     }
-  }
-
-//   body {
-// 	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-// 	background-size: 400% 400%;
-// 	animation: gradient 55s ease infinite;
-// 	height: 100vh;
-// }
-
-// @keyframes gradient {
-// 	0% {
-// 		background-position: 0% 50%;
-// 	}
-// 	50% {
-// 		background-position: 100% 50%;
-// 	}
-// 	100% {
-// 		background-position: 0% 50%;
-// 	}
-// }
-
-
-
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    overflow-y: auto;
-    // background: linear-gradient(#123, #111);
   }

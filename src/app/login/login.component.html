@@ -1,84 +1,35 @@
-<div class="page">
-  <!-- <h1>opportunity</h1> -->
-  <div class="box">
-    <div class="c-1">
-      <div class="c-vertical"></div>
+<form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+  <div class="container-fluid">
+    <h2 class="form-signin-heading">Login</h2>
+    <div *ngIf="invalidLogin" class="alert alert-danger">
+      Invalid username or password.
     </div>
-    <div class="c-2">
-      <div class="g-floating-download">
-        <!-- <a class="download-button" href="../../assets/pdf/AO Hire.pdf">View CV</a> -->
-        <a class="download-button" href="../../assets/pdf/AO Hire.pdf" download="AO Hire.pdf">Download Full CV <span class="fa fa-download"></span></a>
-      </div>
-      <div class="g-floating-download">
-        <!-- <a class="download-button" href="../../assets/pdf/AO Hire.pdf">View CV</a> -->
-        <a class="download-button" href="/ao">View portfolio</a>
-      </div>
-      <div class="g-1">homework for</div>
-      <!-- <div class="g-1 g-highlight">GistLens</div> -->
-      <div class="g-1">
-        <img class="g-company-logo" alt="GistLens" src="data:image/png;base64,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">
-      </div>
-      <div class="g-1">This is in line with the homework given prior interview.</div>
-      <div class="g-1 g-bold"><span class="fa">1</span>Array Point System Sum</div>
-      <div class="g-1">Sums (1 for even, 3 for odd, 5 for 5's)</div>
-      <div class="g-1">
-        <form class="form1">
-          <div class="container-fluid">
-            <label for="input1" class="sr-only">Input array: 1,2,3,4,5</label>
-            <input id="input1" type="text" [formControl]="input1" 
-            class="form-control" 
-            required
-            autofocus
-            placeholder="Input 1">
-            <div class="g-output">{{output1}}</div>
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" (click)="process1()">
-              Process
-            </button>
-          </div>
-        </form>
-      </div>
-      
-      <div class="g-1 g-bold"><span class="fa">2</span>Stack fix</div>
-      <div class="g-1">Implementation of stack with push,5 | pop | peek | swap</div>
-      <div class="g-1">
-        <form class="form2">
-          <div class="container-fluid">
-            <label for="input2" class="sr-only">Input options: push,5 | pop | peek | swap</label>
-            <input id="input2" type="text" [formControl]="input2" 
-            class="form-control" 
-            required
-            autofocus
-            placeholder="Input 2">
-            <div class="g-output">{{output2}}</div>
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" (click)="process2()">
-              Process
-            </button>
-          </div>
-        </form>
-      </div>
-      
-      <div class="g-1 g-bold"><span class="fa">3</span>Tribonacci</div>
-      <div class="g-1">Adds the latest 3 numbers to get the next</div>
-      <div class="g-1">
-        <form class="form3">
-          <div class="container-fluid">
-            <label for="input3" class="sr-only">Input array: [0, 0, 1], 9</label>
-            <input id="input3" type="text" [formControl]="input3" 
-            class="form-control" 
-            required
-            autofocus
-            placeholder="Input 3">
-            <div class="g-output">{{output3}}</div>
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" (click)="process3()">
-              Process
-            </button>
-          </div>
-        </form>
-      </div>
-      
-    </div>
+    <br />
+    <label for="email" class="sr-only">Email address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      ngModel
+      class="form-control"
+      placeholder="User Name"
+      required
+      autofocus
+    />
+    <br />
+    <label for="password" class="sr-only">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      ngModel
+      class="form-control"
+      placeholder="Password"
+      required
+    />
+    <br />
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      Login
+    </button>
   </div>
-</div>
+</form>

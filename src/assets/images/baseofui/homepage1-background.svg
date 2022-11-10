@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="tree" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" xml:space="preserve">
+  <polygon points="500,0 400,100 500,100" style="fill:#002200;" />
+  <polygon points="500,0 400,100 450,80" style="fill:#003300;" />
+    <polygon points="500,60 300,300 500,300" style="fill:#002200;" />
+    <polygon points="500,60 300,300 350,280" style="fill:#003300;" />
+  <polygon points="500,0 450,80 500,80" style="fill:#005500;" />
+        <polygon points="500,240 200,500 500,500" style="fill:#002200;" />
+        <polygon points="500,240 200,500 350,480" style="fill:#003300;" />
+    <polygon points="500,60 350,280 500,280" style="fill:#005500;" />
+        <polygon points="500,240 350,480 500,480" style="fill:#005500;" />
+    <polygon points="500,480 480,480 480,500 500,500" style="fill:#aa8833;" />
+
+  <circle cx="450" cy="80" r="5" fill="#FFFFFF" />
+  <circle cx="400" cy="100" r="5" fill="#FFFFFF" />
+  <circle cx="300" cy="300" r="5" fill="#FFFFFF" />
+  <circle cx="350" cy="280" r="5" fill="#FFFFFF" />
+  <circle cx="350" cy="480" r="5" fill="#FFFFFF" />
+  <circle cx="200" cy="500" r="5" fill="#FFFFFF" />
+</svg>

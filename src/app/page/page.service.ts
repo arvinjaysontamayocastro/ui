@@ -3,6 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Products } from '../Models/Products';
 import configurl from '../../assets/config/config.json';
+import { Page } from '../Models/Page';
+
+
+var pages: Page[] = [
+  {name: "Base Test", websiteUrl: "", pageUrl: "/base"}
+];
+
+
 
 @Injectable({
   providedIn: 'root',
@@ -10,8 +18,15 @@ import configurl from '../../assets/config/config.json';
 export class PageService {
   url = configurl.apiServer.url + '/api/product/';
   constructor(private http: HttpClient) {}
-  getPageConfiguration(websiteUrl: string, pageUrl: string): Observable<Products[]> {
-    return this.http.get<Products[]>(this.url + 'ProductsList');
+  getPageConfiguration(websiteUrl: string, pageUrl: string): Page | null{
+    var page= pages.find(page => page.pageUrl === pageUrl);
+    if(page) {
+      return page;
+    }
+    else {
+      return null;
+    }
+    // return this.http.get<Products[]>(this.url + 'ProductsList');
   }
   postProductData(productData: Products): Observable<Products> {
     const httpHeaders = {

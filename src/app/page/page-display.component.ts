@@ -6,6 +6,7 @@ import configurl from '../../assets/config/config.json';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { ToastrService } from 'ngx-toastr';
 import { PageService } from './page.service';
+import { Page } from '../Models/Page';
 
 @Component({
   selector: 'page-display',
@@ -16,8 +17,11 @@ export class PageDisplayComponent implements OnInit {
   @Input() websiteUrl: string = "";
   @Input() pageUrl: string = "";
   invalidLogin?: boolean;
+  isPage = false;
+  page: Page;
 
   ngOnInit() {
+    this.processPage();
     // console.log(this.baseUrl);
   }
 
@@ -30,6 +34,7 @@ export class PageDisplayComponent implements OnInit {
     private toastr: ToastrService,
     private pageService: PageService
   ) {
+    this.page = new Page();
   }
 
   public login = (form: NgForm) => {
@@ -60,6 +65,14 @@ export class PageDisplayComponent implements OnInit {
       return true;
     } else {
       return false;
+    }
+  }
+
+  processPage() {
+    var currentPage = this.pageService.getPageConfiguration(this.websiteUrl, this.pageUrl);
+    if(currentPage != null) {
+      this.isPage = true;
+      this.page = currentPage;
     }
   }
 }

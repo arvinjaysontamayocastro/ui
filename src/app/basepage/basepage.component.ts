@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss'],
+  selector: 'app-basepage',
+  templateUrl: './basepage.component.html',
+  //   styleUrls: ['./basepage.component.scss'],
 })
-export class HomepageComponent {
+export class BasePageComponent {
   fullUrl: string = "";
   websiteUrl: string = "";
   pageUrl: string = "";

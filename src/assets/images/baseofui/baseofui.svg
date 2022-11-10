@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="110.794" y="211.666" width="243.188" height="243.188" style="stroke-width: 25px; fill: rgb(255, 255, 255);"/>
+  <path d="M 367.482 199.166 L 367.482 467.354 L 99.294 467.354 L 99.294 199.166 Z M 124.294 442.354 L 342.482 442.354 L 342.482 224.166 L 124.294 224.166 Z" style=""/>
+  <polyline style="stroke: rgb(0, 0, 0); stroke-width: 25px; fill: rgb(255, 17, 17);" points="111.926 212.797 113.05 35.214 205.242 92.428 113.618 142.988"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 127px; font-weight: 700; white-space: pre;" x="166.653" y="378.756">UI</text>
+</svg>

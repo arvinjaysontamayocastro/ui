@@ -1,4 +1,9 @@
-page display:
+<div *ngIf="isPage">
+    {{page.name}}
+</div>
+<div *ngIf="!isPage">
+    page display:
 fullUrl: {{fullUrl}}<br/>
 websiteUrl: {{websiteUrl}}<br/>
 pageUrl: {{pageUrl}}<br/>
+</div>
