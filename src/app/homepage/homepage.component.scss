@@ -483,6 +483,36 @@
     .g-portfolio {
         margin: 24px;
     }
+    .g-card {
+        padding: 24px;
+        width: 400px;
+        height: 400px;
+        background-color: #ffbb33;
+        box-shadow: -10px 10px 10px 5px #CCCCCC;
+        border: solid 1px #CCCCCC;
+        .g-title {
+            font-size: 1.2em;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: #091320;
+        }
+        .g-email {
+            text-decoration: none;
+            color: #091320;
+            font-size: 1.2em;
+            margin-top: 100px;
+            a{
+
+            text-decoration: none;
+            color: #091320;
+            }
+        }
+        .g-number {
+            color: #091320;
+            font-size: 1.2em;
+
+        }
+    }
 }
 @media screen and (max-width: 500px) {
     .box {
